@@ -4,6 +4,7 @@
   "description": "Backend for FFA Music app",
   "main": "server.js",
   "scripts": {
+    "preinstall": "curl -L https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp -o yt-dlp && chmod +x yt-dlp && sudo mv yt-dlp /usr/local/bin/",
     "start": "node server.js",
     "dev": "nodemon server.js"
   },
