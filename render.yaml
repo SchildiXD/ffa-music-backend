@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: ffa-music-backend
+    env: node
+    buildCommand: |
+      curl -L https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp -o yt-dlp
+      chmod +x yt-dlp
+      sudo mv yt-dlp /usr/local/bin/
+      npm install
+    startCommand: npm start
+    envVars:
+      - key: NODE_VERSION
+        value: 18
