@@ -1,0 +1,15 @@
+{
+  "name": "ffa-music-backend",
+  "version": "1.0.0",
+  "description": "Backend for FFA Music app",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vercel dev",
+    "build": "echo 'Building...'"
+  },
+  "dependencies": {
+    "yt-dlp-wrap": "^2.3.12",
+    "cors": "^2.8.5",
+    "express": "^4.18.2"
+  }
+}
